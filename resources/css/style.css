@@ -23,6 +23,12 @@ nav span:hover {
   color: #b3b3b3;
 }
 
+h1 {
+  font-size: 2.20rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
 h2 {
   font-size: 2rem;
   font-weight: 600;
@@ -40,6 +46,7 @@ h4 {
 
 p {
   font-size: 0.85rem;
+  line-height: 1.2rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -104,11 +111,13 @@ header .container {
 
 .main-banner {
   background-color: #e6e6e6;
+  margin: 0 auto;
 }
 
 .main-banner .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .banner-img {
@@ -129,17 +138,12 @@ header .container {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 24px;
+  margin-right: 60px;
   text-align: left;
 }
 
-.tagline h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1.1;
-}
-
 .tagline h2 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 42px;
 }
@@ -147,15 +151,38 @@ header .container {
 .tagline a {
   display: inline-block;
   background-color: #595959;
-  width: 330px;
   color: #ffffff;
   text-align: center;
   padding: 18px 0;
   text-decoration: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
+  .main-banner .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 
+  .banner-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner-text {
+    width: 100%;
+  }
+
+  .tagline {
+    align-items: center;
+    padding: 0;
+    margin: 24px 24px;
+  }
+
+  .tagline a {
+    width: 50%;
+  }
 }
 
 /* Campus Info */
@@ -174,6 +201,10 @@ header .container {
   width: 100%;
 }
 
+.info-main p {
+  padding-right: 16px;
+}
+
 #emanuel {
   padding-top: 24px;
 }
@@ -184,7 +215,7 @@ header .container {
   justify-content: flex-start;
   align-items: center;
   width: 40%;
-  margin: 32px 0px;
+  padding: 32px 0px;
 }
 
 .info {
@@ -206,6 +237,7 @@ header .container {
 
 .content {
   width: 65%;
+  padding-right: 16px;
 }
 
 .content a {
